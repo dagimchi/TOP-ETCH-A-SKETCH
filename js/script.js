@@ -1,4 +1,5 @@
 let container = document.querySelector(".container");
+let mouseDown = false;
 
 for (let i = 1; i <= 256; i++) {
   let div = document.createElement("div");
@@ -7,3 +8,19 @@ for (let i = 1; i <= 256; i++) {
   div.style.border = "1px solid black";
   container.appendChild(div);
 }
+
+container.addEventListener("mousedown", () => {
+  mouseDown = true;
+});
+
+container.addEventListener("mousemove", (e) => {
+  if (mouseDown) {
+    e.target.style.backgroundColor = "red";
+  }
+});
+
+window.addEventListener("mouseup", () => {
+  if (mouseDown) {
+    mouseDown = false;
+  }
+});
