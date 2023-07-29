@@ -86,14 +86,14 @@ a {
   padding: 0.5em;
   margin-bottom: 15px;
   width: 100%;
-  background-color: #f17300;
-  color: white;
+  background-color: burlywood;
+
   border: 5px solid black;
   transition: all 0.1s ease-in-out;
 }
 
 .btn-grid:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
 main {
@@ -124,6 +124,10 @@ main {
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
+}
+
+label {
+  font-size: 25px;
 }
 
 input {
