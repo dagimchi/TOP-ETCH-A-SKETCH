@@ -67,14 +67,14 @@ btnDelete.addEventListener("click", () => {
   insertChildNodes(globalGridNum);
 });
 
-btnEraser.addEventListener("click", () => {
+function doMouseAction(value) {
   container.addEventListener("mousedown", () => {
     mouseDown = true;
   });
 
   container.addEventListener("mousemove", (e) => {
     if (mouseDown) {
-      e.target.style.backgroundColor = "white";
+      e.target.style.backgroundColor = `${value}`;
     }
   });
 
@@ -83,6 +83,10 @@ btnEraser.addEventListener("click", () => {
       mouseDown = false;
     }
   });
+}
+
+btnEraser.addEventListener("click", () => {
+  doMouseAction("white");
 });
 
 btnColor.addEventListener("click", () => {
