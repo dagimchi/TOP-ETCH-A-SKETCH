@@ -12,7 +12,7 @@ for (let i = 1; i <= 256; i++) {
   let div = document.createElement("div");
   div.style.width = `${600 / 16}px`;
   div.style.height = `${600 / 16}px`;
-  div.style.border = "1px solid black";
+
   container.appendChild(div);
 }
 
@@ -37,7 +37,6 @@ function insertChildNodes(num) {
     let div = document.createElement("div");
     div.style.width = `${600 / num}px`;
     div.style.height = `${600 / num}px`;
-    div.style.border = "1px solid black";
     container.appendChild(div);
   }
 }
@@ -86,6 +85,12 @@ function doMouseAction(value) {
 }
 
 btnEraser.addEventListener("click", () => {
+  if (btnRandom.classList.contains("click-bg")) {
+    btnRandom.classList.remove("click-bg");
+    btnRandom.style.color = "black";
+  }
+  btnEraser.classList.add("click-bg");
+  btnEraser.style.color = "white";
   doMouseAction("white");
 });
 
@@ -112,6 +117,12 @@ function randomNum() {
 }
 
 btnRandom.addEventListener("click", () => {
+  if (btnEraser.classList.contains("click-bg")) {
+    btnEraser.classList.remove("click-bg");
+    btnEraser.style.color = "black";
+  }
+  btnRandom.classList.add("click-bg");
+  btnRandom.style.color = "white";
   container.addEventListener("mousedown", () => {
     mouseDown = true;
   });

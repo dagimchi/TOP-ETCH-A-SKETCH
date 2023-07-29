@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch a Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1 class="title">Grid and Sketch!</h1>
-    <button class="btn-grid">Set New Grid Dimensions</button>
+
     <main>
       <div class="left-panel">
         <div class="align">
@@ -19,7 +25,12 @@
         <button class="btn-delete">Delete All</button>
         <button class="btn-eraser">Eraser</button>
       </div>
-      <div class="container"></div>
+      <div class="grid-container">
+        <button class="btn-grid">Set New Grid Dimensions</button>
+        <div class="wrap">
+          <div class="container"></div>
+        </div>
+      </div>
     </main>
 
     <script src="js/script.js"></script>

@@ -20,6 +20,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #ebf2fa;
 }
 /*
   5. Improve media defaults
@@ -74,11 +75,17 @@ a {
 
 .title {
   text-align: center;
+  font-family: "Bungee Spice", cursive;
+  font-size: 3.125rem;
 }
 
 .btn-grid {
   display: block;
   margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 main {
@@ -94,7 +101,9 @@ main {
   flex-direction: column;
   font-size: 1.375rem;
   padding: 1.2em 2em;
-  background-color: aqua;
+  border: 5px solid black;
+  background-color: burlywood;
+  border-radius: 30px;
 }
 
 .align {
@@ -110,9 +119,32 @@ input {
   cursor: pointer;
 }
 
+.btn-random,
+.btn-delete {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wrap {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: burlywood;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .container {
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  background-color: white;
+}
+
+.click-bg {
+  background-color: black;
 }
