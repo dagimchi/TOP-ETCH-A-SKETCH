@@ -21,6 +21,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #ebf2fa;
+  padding: 20px;
 }
 /*
   5. Improve media defaults
@@ -76,24 +77,29 @@ a {
 .title {
   text-align: center;
   font-family: "Bungee Spice", cursive;
-  font-size: 3.125rem;
+  font-size: 3rem;
+  margin-bottom: 67px;
 }
 
 .btn-grid {
-  display: block;
-  margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0.5em;
   margin-bottom: 15px;
   width: 100%;
+  background-color: #f17300;
+  color: white;
+  border: 5px solid black;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-grid:hover {
+  transform: scale(1.01);
 }
 
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  gap: 55px;
+  align-items: flex-start;
 }
 
 .left-panel {
@@ -104,6 +110,13 @@ main {
   border: 5px solid black;
   background-color: burlywood;
   border-radius: 30px;
+  align-self: center;
+}
+
+.align-interface {
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
 }
 
 .align {
