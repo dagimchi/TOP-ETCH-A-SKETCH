@@ -72,15 +72,46 @@ a {
 
 /* This project uses Josh Comeau's modern css reset https://www.joshwcomeau.com/css/custom-css-reset/ */
 
+.title {
+  text-align: center;
+}
+
+.btn-grid {
+  display: block;
+  margin: 0 auto;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  gap: 55px;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.375rem;
+  padding: 1.2em 2em;
+  background-color: aqua;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
