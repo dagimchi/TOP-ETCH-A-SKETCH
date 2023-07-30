@@ -167,3 +167,7 @@ button {
 .click-bg {
   background-color: black;
 }
+
+.border-black {
+  border: 5px solid black;
+}

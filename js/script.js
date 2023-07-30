@@ -88,6 +88,8 @@ btnEraser.addEventListener("click", () => {
   if (btnRandom.classList.contains("click-bg")) {
     btnRandom.classList.remove("click-bg");
     btnRandom.style.color = "black";
+  } else if (btnColor.classList.contains("border-black")) {
+    btnColor.classList.remove("border-black");
   }
   btnEraser.classList.add("click-bg");
   btnEraser.style.color = "white";
@@ -95,6 +97,14 @@ btnEraser.addEventListener("click", () => {
 });
 
 btnColor.addEventListener("click", () => {
+  if (btnRandom.classList.contains("click-bg")) {
+    btnRandom.classList.remove("click-bg");
+    btnRandom.style.color = "black";
+  } else if (btnEraser.classList.contains("click-bg")) {
+    btnEraser.classList.remove("click-bg");
+    btnEraser.style.color = "black";
+  }
+  btnColor.classList.add("border-black");
   container.addEventListener("mousedown", () => {
     mouseDown = true;
   });
@@ -120,6 +130,8 @@ btnRandom.addEventListener("click", () => {
   if (btnEraser.classList.contains("click-bg")) {
     btnEraser.classList.remove("click-bg");
     btnEraser.style.color = "black";
+  } else if (btnColor.classList.contains("border-black")) {
+    btnColor.classList.remove("border-black");
   }
   btnRandom.classList.add("click-bg");
   btnRandom.style.color = "white";
